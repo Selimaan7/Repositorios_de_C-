@@ -4,8 +4,17 @@
 
 using namespace std;
 
+void escritura ();
+
 int main(){
-    int cant;
+
+    escritura();
+
+return 0;
+}
+
+void escritura (){
+    int cant = 0;
     string nombredearchivo;
     
     ofstream arch;
@@ -22,6 +31,7 @@ int main(){
     }
     cout<< "cuantas frases va a querer ingresar?"<< endl;
     cin >> cant;
+    cin.get();
     for (int i = 0; i<cant; i ++){
         string frase;
         getline (cin,frase);

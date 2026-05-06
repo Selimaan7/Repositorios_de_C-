@@ -1,0 +1,3 @@
+Esta carpeta va a contener todos lo ejeciocio que pueda hacer del curso de programacion ats del canal de youtube.
+Sin embagargo es porbable que dnetor de un tiempo termine cambiando de profesor de c++
+y me vaya a uno que se llama pildorasinformaticas.
