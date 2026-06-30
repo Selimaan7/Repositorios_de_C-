@@ -37,7 +37,7 @@ void MuestraPorNiveles (NABinario* arbol){
         cout << aux->dato << " ";
         
         if (aux->izq != NULL) encolar (fr, fo, aux->izq, NivelActual + 1);
-        
+
         if (aux->der != NULL) encolar (fr, fo, aux->der, NivelActual + 1);
     }
 }

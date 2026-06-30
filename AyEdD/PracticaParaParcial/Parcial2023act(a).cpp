@@ -27,13 +27,10 @@ void PonerEnCola (LDE* &raiz, Ncola* &verde, Ncola* &negra){
     while (aux->der !=NULL){
         if (aux->edad = 3 && aux->distancia > 2){
             Encolar (verde, aux);
+            eliminarnodo (raiz, aux);
         } else if (aux->edad >= 4 && aux->edad < 6 && aux->distancia > 2){
             Encolar (negra, aux);
-            auxant = aux->izq;
-            auxsig = aux->der;
-            delete aux;
-            auxant->der = auxsig;
-            auxsig->izq = auxant;
+            eliminarnodo (raiz, aux);
         }
     }
 }
@@ -54,5 +51,5 @@ void eliminarnodo (LDE* &raiz, LDE* nodo){
     auxsig = aux->der;
     delete aux;
     auxant->der = auxsig;
-    if (auxsig !=NULL) auxsig->izq = auxant;
+    if (auxsig != NULL) auxsig->izq = auxant;
 }
