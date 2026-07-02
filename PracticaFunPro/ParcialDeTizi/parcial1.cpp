@@ -59,7 +59,7 @@ int main() {
 		cliente.DNI[cantidad_clientes] = dni_archivo;
 		cliente.nya[cantidad_clientes] = nya_archivo;
 		cliente.fecha_alta[cantidad_clientes] = stoi(fecha_str);
-		
+			
 		cantidad_clientes++;
 	}
 	
